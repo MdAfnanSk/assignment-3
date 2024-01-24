@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/5939dcd526.js" crossorigin="anonymous"></script>
+    <!-- custos color js -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'comola': '#FF4240',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- custom css -->
+    <style>
+        .main_font {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container m-auto main_font p-[10px]">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[16px] font-bold">
+                            <li><a class="hover:text-comola bg-inherit" href="#">Home</a></li>
+                            <li><a class="hover:text-comola hover:bg-inherit" href="#">About</a></li>
+                            <li><a class="hover:text-comola hover:bg-inherit" href="#">Pages</a></li>
+                            <li><a class="hover:text-comola hover:bg-inherit" href="#">Blog</a></li>
+                            <li><a class="hover:text-comola hover:bg-inherit" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-2xl lg:text-5xl font-bold cursor-pointer">Hockey<span
+                            class="text-comola">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex ">
+                    <ul class="menu menu-horizontal px-1 text-[16px] font-bold">
+                        <li><a class="hover:text-comola hover:bg-inherit" href="#">Home</a></li>
+                        <li><a class="hover:text-comola hover:bg-inherit" href="#">About</a></li>
+                        <li><a class="hover:text-comola hover:bg-inherit" href="#">Pages</a></li>
+                        <li><a class="hover:text-comola hover:bg-inherit" href="#">Blog</a></li>
+                        <li><a class="hover:text-comola hover:bg-inherit" href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end flex items-center">
+                    <i class="fa-solid fa-magnifying-glass mr-4 text-[#89898B] hidden lg:block cursor-pointer"></i>
+                    <a class="btn bg-comola text-white lg:px-6 rounded-lg font-bold hover:bg-comola ">Get Ticket</a>
+                </div>
+            </div>
+            <div id="banner" class="mt-[30px]">
+                <div class="carousel w-full lg:h-[540px]">
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img src="Images/1.png" class="w-full" />
+                        <div
+                            class="banner_text absolute bottom-[-160px] lg:bottom-8 lg:right-8 bg-black lg:w-[502px] text-white p-5 rounded-xl">
+                            <h3 class="text-[18px] lg:text-2xl font-bold mb-2">Meet all the heroes from the field</h3>
+                            <p class="text-[14px] lg:text-[16px] mt-3">Dit amet consectetur. Condimentum dignissim
+                                adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+                        </div>
+                        <div class="absolute lg:ml-[40px] left-5 right-5 bottom-[10px] lg:bottom-[30px]">
+                            <a href="#slide4" class="btn btn-circle bg-black text-white border-0">❮</a>
+                            <a href="#slide2" class="btn btn-circle ml-[20px] bg-black text-white border-0">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img src="Images/2.png" class="w-full" />
+                        <div class="absolute lg:ml-[40px] left-5 right-5 bottom-[10px] lg:bottom-[30px]">
+                            <a href="#slide1" class="btn btn-circle bg-black text-white border-0">❮</a>
+                            <a href="#slide3" class="btn btn-circle ml-[20px] bg-black text-white border-0">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <img src="Images/3.png" class="w-full" />
+                        <div class="absolute lg:ml-[40px] left-5 right-5 bottom-[10px] lg:bottom-[30px]">
+                            <a href="#slide2" class="btn btn-circle bg-black text-white border-0">❮</a>
+                            <a href="#slide4" class="btn btn-circle ml-[20px] bg-black text-white border-0">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide4" class="carousel-item relative w-full">
+                        <img src="Images/4.png" class="w-full" />
+                        <div class="absolute lg:ml-[40px] left-5 right-5 bottom-[10px] lg:bottom-[30px]">
+                            <a href="#slide3" class="btn btn-circle bg-black text-white border-0">❮</a>
+                            <a href="#slide1" class="btn btn-circle ml-[20px] bg-black text-white border-0">❯</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="club">
+                <div class="common_head text-center mt-16 border-y border-[#89898B] pt-5">
+                    <h3 class="text-[25px] lg:text-[36px] font-extrabold">Professional Hockeys Club</h3>
+                    <p class="text-[14px] lg:text-[16px] text-[#89898B] lg:w-[607px] m-auto pb-7">Dit amet consectetur.
+                        Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.
+                    </p>
+                </div>
+                <div class="club_main grid grid-cols-1 lg:grid-cols-4 gap-5 text-center">
+                    <div class="club_col p-5 lg:pt-16">
+                        <div class="radial-progress text-[#FF4240] my-[24px]" style="--value:87;" role="progressbar">87%
+                        </div>
+                        <div class="club_text">
+                            <h3 class="text-[20px] font-extrabold">Prayer Facility</h3>
+                            <p class="text-[16px] text-[#89898B]">Amet consectetur. Condimentum dignissim adipiscing .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="club_col p-5 lg:pt-16">
+                        <div class="radial-progress text-[#49D293] my-[24px]" style="--value:87;" role="progressbar">87%
+                        </div>
+                        <div class="club_text">
+                            <h3 class="text-[20px] font-extrabold">Experienced Coach</h3>
+                            <p class="text-[16px] text-[#89898B]">Amet consectetur. Condimentum dignissim adipiscing .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="club_col p-5 lg:pt-16">
+                        <div class="radial-progress text-[#FFB546] my-[24px]" style="--value:87;" role="progressbar">87%
+                        </div>
+                        <div class="club_text">
+                            <h3 class="text-[20px] font-extrabold">Senior Player</h3>
+                            <p class="text-[16px] text-[#89898B]">Amet consectetur. Condimentum dignissim adipiscing .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="club_col p-5 lg:pt-16">
+                        <div class="radial-progress text-[#4C8DF1] my-[24px]" style="--value:87;" role="progressbar">87%
+                        </div>
+                        <div class="club_text">
+                            <h3 class="text-[20px] font-extrabold">Training Ground</h3>
+                            <p class="text-[16px] text-[#89898B]">Amet consectetur. Condimentum dignissim adipiscing .
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="program">
+                <div class="common_head text-center mt-16 border-y border-[#89898B] pt-5">
+                    <h3 class="text-[25px] lg:text-[36px] font-extrabold">Program Sections</h3>
+                    <p class="text-[14px] lg:text-[16px] text-[#89898B] lg:w-[607px] m-auto pb-7">Dit amet consectetur.
+                        Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.
+                    </p>
+                </div>
+                <div class="program_main pt-14 grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="pro_col relative">
+                        <img src="Images/2.png" class="w-full" alt="">
+                        <div class="overlay absolute top-1/2 left-[0] transform translate-y-[-50%] pl-7 pr-7">
+                            <h4 class="text-[22px] lg:text-[28px] text-white font-extrabold">Junior Program</h4>
+                            <p class="mb-4 lg:mb-9  text-[14px] lg:text-[16px] text-white lg:w-[495px]">Dolor sit amet consectetur. Ut urna diam quis
+                                sagittis. Elit elit
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                                congue sed et in.</p>
+                            <a href="#" class="px-6 py-3 bg-comola text-white font-bold rounded-lg">Register Now!</a>
+                        </div>
+                    </div>
+
+                    <div class="pro_col relative">
+                        <img src="Images/3.png" class="w-full" alt="">
+                        <div class="overlay absolute top-1/2 left-[0] transform translate-y-[-50%] pl-7 pr-7">
+                            <h4 class="text-[22px] lg:text-[28px] text-white font-extrabold">Junior Program</h4>
+                            <p class="mb-4 lg:mb-9 text-[14px] lg:text-[16px] text-white lg:w-[495px]">Dolor sit amet consectetur. Ut urna diam quis
+                                sagittis. Elit elit
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                                congue sed et in.</p>
+                            <a href="#" class="px-6 py-3 bg-comola text-white font-bold rounded-lg">Register Now!</a>
+                        </div>
+                    </div>
+
+                    <div class="pro_col relative lg:col-span-2">
+                        <img src="Images/4.png" class="w-full h-[200px] lg:h-auto" alt="">
+                        <div class="overlay absolute top-1/2 left-[0] transform translate-y-[-50%] pl-7 pr-7">
+                            <h4 class="text-[22px] lg:text-[28px] text-white font-extrabold">Junior Program</h4>
+                            <p class="mb-4 lg:mb-9  text-[14px] lg:text-[16px] text-white lg:w-[520px]">Dolor sit amet consectetur. Ut urna diam quis
+                                sagittis. Elit elit
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                                congue sed et in.</p>
+                            <a href="#" class="px-6 py-3 bg-comola text-white font-bold rounded-lg">Register Now!</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+    </div>
+
+
+    </main>
+    </div>
+</body>
+
+</html>
